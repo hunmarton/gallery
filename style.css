@@ -13,13 +13,14 @@ body{
 }
 .images-container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100vh;
     justify-content: space-between;
 }
 .image{
     width: 300px;
-    height: auto;
+    height: 200px;
     overflow: hidden;
 }
 .image img{
@@ -63,7 +64,30 @@ body{
     border: 3px solid white;
     border-radius: 50%;
 }
+.big-img a:hover{
+    transform: scale(1.1);
+}
 .visible{
     opacity: 1;
     visibility: visible;
+}
+.arrows i{
+    font-size: 3rem;
+    color: white;
+}
+.arrows i:hover{
+    color: lightgray;
+    cursor: pointer;
+}
+.fa-arrow-left,.fa-arrow-right{
+    position: absolute;
+    padding: 30px;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+.fa-arrow-left{
+    left: 0;
+}
+.fa-arrow-right{
+    right: 0;
 }
