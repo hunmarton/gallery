@@ -91,3 +91,33 @@ body{
 .fa-arrow-right{
     right: 0;
 }
+.dots{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    position: absolute;
+    bottom: 15px;
+    left: 40%;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+.dots:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.dot-0{
+    margin-left: 30px;
+}
+.dot-1{
+    margin-left: 60px;
+}
+.dot-2{
+    margin-left: 90px;
+}
+.dot-3{
+    margin-left: 120px;
+}
+.big{
+    height: 30px;
+    width: 30px;
+}
